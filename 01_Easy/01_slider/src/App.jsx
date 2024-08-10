@@ -11,6 +11,7 @@ import ArrowButtons from "./components/ArrowButtons";
 
 
 import Slide from "./components/Slide";
+import ImageButton from './components/ImageButton';
 
 function App() {
 
@@ -30,10 +31,16 @@ function App() {
 
 
   return (
-    <div className='w-full h-screen  flex justify-around items-center'>
-      <ArrowButtons direction={'left'} setSlideNo={setSlideNo}/>
-      <Slide carLink={carLink} slideNo={slideNo}/>
-      <ArrowButtons direction={'right'} setSlideNo={setSlideNo}/>
+    <div className="h-screen flex flex-col justify-around items-center " >
+      <div className='w-full flex justify-around items-center '>
+        <ArrowButtons direction={'left'} setSlideNo={setSlideNo}/>
+        <Slide carLink={carLink} slideNo={slideNo}/>
+        <ArrowButtons direction={'right'} setSlideNo={setSlideNo}/>
+      </div>
+      <div >
+        <ImageButton carLink={carLink} setSlideNo={setSlideNo} slideNo={slideNo} />
+      </div>
+      
     </div>
   )
 }
