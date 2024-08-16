@@ -6,10 +6,11 @@ function App() {
   const [stateNo, setStateNo] = useState(null);
   const [city, setCity] = useState([])
 
+
   return (
     <div className='w-full h-screen flex flex-col gap-5 justify-center items-center bg-slate-100'>
-      <Select data={data} type="state" stateNo={stateNo} setStateNo={setStateNo} />
-      {stateNo !== null ? <Select data={data} type="city" stateNo={stateNo} city={city} setCity={setCity} /> : ''}
+      <Select data={data} type="state" stateNo={stateNo} setStateNo={setStateNo} z={'100'} />
+      {stateNo !== null ? <Select data={data} type="city" stateNo={stateNo} city={city} setCity={setCity} z={'50'} /> : ''}
     </div>
   );
 }
