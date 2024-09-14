@@ -1,8 +1,12 @@
 import React from 'react'
+import {Left, Right} from "./components"
 
 function App() {
   return (
-    <div>App</div>
+    <main className='flex'>
+      <Left />
+      <Right />
+    </main>
   )
 }
 
