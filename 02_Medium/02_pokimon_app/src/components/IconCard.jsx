@@ -4,7 +4,7 @@ import pokeImg from "../assets/pokemon.png"
 
 function IconCard() {
   return (
-    <div className='relative w-[10vw] h-[10vw] rounded-lg flex flex-col  border  hover:border-black ease-in-out duration-300'>
+    <div className='relative w-[10vw] h-[10vw] rounded-lg flex flex-col  border  hover:border-black ease-in-out duration-300 cursor-pointer'>
       <div className='w-full h-1/2 '></div>
       <div className='w-full h-1/2 bg-gray-100 rounded-b-lg flex justify-center items-center'>
       <h1>Pikachu</h1>
